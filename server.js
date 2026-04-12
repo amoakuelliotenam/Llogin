@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://faithfulenam_db_user:b03hzyWd6jaPFEd8@cluster0.qmwdaye.mongodb.net/?appName=Cluster0");
+mongoose.connect("mongodb+srv://faithfulenam_db_user:b03hzyWd6jaPFEd8@cluster0.qmwdaye.mongodb.net/?appName=Cluster0")
       .then(() => console.log("Connected to MongoDB"))
       .catch(err=>console.log(err));
 const UserSchema = new mongoose.Schema({
