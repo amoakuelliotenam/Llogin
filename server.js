@@ -7,7 +7,7 @@ const e = require("express");
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static("public"));
+app.use(express.json());
 
 mongoose.connect("mongodb+srv://faithfulenam_db_user:b03hzyWd6jaPFEd8@cluster0.qmwdaye.mongodb.net/?appName=Cluster0")
       .then(() => console.log("Connected to MongoDB"))
